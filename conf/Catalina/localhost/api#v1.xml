@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Context docBase="C:\Users\Joao Pedro\Desktop\monitoramento-ar\src\main\java\com\project">
+<Context docBase="/home/joao/Desktop/monitoramento-ar-backend/src/main/java/com/project">
   <Resources cacheMaxSize="10240">
-    <PreResources base="C:/Users/Joao Pedro/Desktop/monitoramento-ar/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
-    <PostResources base="C:/Users/Joao Pedro/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-j-8.0.33.jar"/>
-    <PostResources base="C:/Users/Joao Pedro/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/protobuf-java-3.21.9.jar"/>
-    <PostResources base="C:/Users/Joao Pedro/.m2/repository/org/apache/tomcat/tomcat-servlet-api/10.1.19/tomcat-servlet-api-10.1.19.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-servlet-api-10.1.19.jar"/>
-    <PostResources base="C:/Users/Joao Pedro/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/gson-2.10.1.jar"/>
+    <PreResources base="/home/joao/Desktop/monitoramento-ar-backend/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="/home/joao/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-j-8.0.33.jar"/>
+    <PostResources base="/home/joao/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/protobuf-java-3.21.9.jar"/>
+    <PostResources base="/home/joao/.m2/repository/org/apache/tomcat/tomcat-servlet-api/10.1.19/tomcat-servlet-api-10.1.19.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-servlet-api-10.1.19.jar"/>
+    <PostResources base="/home/joao/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/gson-2.10.1.jar"/>
   </Resources>
 </Context>

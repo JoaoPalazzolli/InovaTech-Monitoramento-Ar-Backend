@@ -21,6 +21,20 @@ services:
     networks:
       - network-monitoramento-ar
 
+  phpMyAdmin:
+    depends_on:
+      mysql:
+        condition: service_healthy
+    image: phpmyadmin:latest
+    container_name: "myadmin-monitoramento"
+    restart: always
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - "80:80"
+    networks:
+      - network-monitoramento-ar
+
 networks:
   network-monitoramento-ar:
     driver: bridge
