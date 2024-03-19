@@ -1,28 +1,27 @@
 package com.project.repositories;
 
+import com.project.configs.EntityManagerConfig;
 import com.project.models.Monitoramento;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
 
+@NoArgsConstructor
 public class MonitoramentoRepository implements JpaRepository<Monitoramento, Long> {
 
     private final Logger logger = Logger.getLogger(MonitoramentoRepository.class.getName());
 
-    private final EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-hibernate-mysql");
-
-    private final EntityManager em = emf.createEntityManager();
+    private final EntityManager em = EntityManagerConfig.getEntityManager();
 
     @SuppressWarnings("all")
     @Override
     public List<Monitoramento> findAll() {
         try {
-            var objects = em.createNativeQuery("select * from monitoramento").getResultList();
-            return objects;
+            return em.createNativeQuery("SELECT * FROM monitoramento", Monitoramento.class).getResultList();
         } catch (Exception e){
             logger.info(e.getMessage());
         }
