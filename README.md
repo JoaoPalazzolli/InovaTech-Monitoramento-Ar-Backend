@@ -2,7 +2,7 @@
 InovaTech-Monitoramento-Ar-Backend
 
 ## Descrição: 
-Descrição do Projeto
+Este é um projeto WebService criado para armazenar, visualizar, deletar e atualizar os dados de monitoramento de ar em um banco de dados, podendo receber pedidos e enviar respostas a um cliente.
 
 ## Pré-requisitos: 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -12,7 +12,7 @@ Descrição do Projeto
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
-## Estrutura do projeto: (Classes utilizadas e suas funções)
+## Estrutura do projeto:
 ### Classe Monitoramento:
 #### Metodos: 
 - FindAll -> Busca por todos os monitoramentos registrados no banco.
@@ -24,10 +24,10 @@ Descrição do Projeto
 ## Implantações: (Aplicadas dentro da atividade)
 Implantações do Projeto.
 
-## Versionamento: (Listagem de versões na qual o exercício está)
+## Versionamento:
 v1.0.0
 
-## Autor(es): (Nome completo, e-mail e RA)
+## Autor(es):
 212193 - João Pedro Palzzolli - joaopedropalazzolli@gmail.com <br>
 235409 - Giuliano Timpanari - giuliano.pirrs@gmail.com <br>
 235298 - Gabriella Souza
