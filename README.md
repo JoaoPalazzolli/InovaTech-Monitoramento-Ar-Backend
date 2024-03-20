@@ -2,7 +2,7 @@
 InovaTech-Monitoramento-Ar-Backend
 
 ## Descrição: 
-Este é um projeto WebService criado para armazenar, visualizar, deletar e atualizar os dados de monitoramento de ar em um banco de dados, podendo receber pedidos e enviar respostas a um cliente.
+Este é um projeto WebService criado para armazenar, visualizar, deletar e atualizar os dados de monitoramento de ar em um banco de dados, podendo assim receber pedidos e enviar respostas a um cliente.
 
 ## Pré-requisitos: 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
