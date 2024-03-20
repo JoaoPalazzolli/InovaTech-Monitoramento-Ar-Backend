@@ -30,4 +30,4 @@ v1.0.0
 ## Autor(es):
 212193 - João Pedro Palzzolli - joaopedropalazzolli@gmail.com <br>
 235409 - Giuliano Timpanari - giuliano.pirrs@gmail.com <br>
-235298 - Gabriella Souza
+235298 - Gabriella Souza - gabriellasouza.amaralribeiro@gmail.com
