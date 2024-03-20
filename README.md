@@ -5,20 +5,14 @@ InovaTech-Monitoramento-Ar-Backend
 Descrição do Projeto
 
 ## Pré-requisitos: 
-- Java 17
-- Apache Tomcat 10.1.19
-- Maven 3.9.1
-- Intellij IDEA
-- Docker
-- MySQL 8.0.33
-- Hibernate Core 6.4.4.Final
-- Hibernate EntityManager 5.6.15.Final
-- ModelMapper 3.2.0
-- Lombok 1.18.30
-- Gson 2.10.1
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
 ## Estrutura do projeto: (Classes utilizadas e suas funções)
-Estrutura do Projeto.
 
 ## Implantações: (Aplicadas dentro da atividade)
 Implantações do Projeto.
