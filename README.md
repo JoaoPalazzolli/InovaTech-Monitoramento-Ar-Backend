@@ -13,6 +13,13 @@ Descrição do Projeto
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
 ## Estrutura do projeto: (Classes utilizadas e suas funções)
+### Classe Monitoramento:
+#### Metodos: 
+- FindAll -> Busca por todos os monitoramentos registrados no banco.
+- FindById -> Busca um monitoramento pelo seu ID que está registrado.
+- Create -> Salva um monitoramento no banco de dados.
+- Update -> Atualiza um monitoramento no banco de dados.
+- Delete -> Deleta um monitoramento no banco de dados.
 
 ## Implantações: (Aplicadas dentro da atividade)
 Implantações do Projeto.
