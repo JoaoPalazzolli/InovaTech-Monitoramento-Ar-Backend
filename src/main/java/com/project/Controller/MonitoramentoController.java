@@ -18,4 +18,9 @@ public class MonitoramentoController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         monitoramentoService.findAll(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        monitoramentoService.create(req, resp);
+    }
 }
