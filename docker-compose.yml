@@ -8,7 +8,7 @@ services:
       interval: 10s
       retries: 5
     image: mysql:latest
-    container_name: "mysql-monitoramento"
+    container_name: mysql-monitoramento
     restart: always
     environment:
       MYSQL_ROOT_USER: root
@@ -26,12 +26,30 @@ services:
       mysql:
         condition: service_healthy
     image: phpmyadmin:latest
-    container_name: "myadmin-monitoramento"
+    container_name: myadmin-monitoramento
     restart: always
     environment:
       PMA_HOST: mysql
     ports:
       - "80:80"
+    networks:
+      - network-monitoramento-ar
+
+  api-monitoramento:
+    depends_on:
+      mysql:
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: project/monitoramentoar:1.0
+    container_name: api-monitoramento
+    restart: always
+    environment:
+      CLASSPATH: /usr/local/tomcat/webapps/api
+    profiles: [ "dev" ]
+    ports:
+      - "8080:8080"
     networks:
       - network-monitoramento-ar
 
