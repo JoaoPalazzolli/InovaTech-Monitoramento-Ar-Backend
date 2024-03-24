@@ -7,7 +7,7 @@
     <persistence-unit name="jpa-hibernate-mysql">
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-            <property name="jakarta.persistence.jdbc.url"    value="jdbc:mysql://localhost:3306/monitoramentoar?useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=true" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:mysql://host.docker.internal:3306/monitoramentoar?useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=true" />
             <property name="jakarta.persistence.jdbc.user"   value="root" />
             <property name="jakarta.persistence.jdbc.password" value="admin" />
             <property name="jakarta.persistence.schema-generation.database.action" value="update" />
