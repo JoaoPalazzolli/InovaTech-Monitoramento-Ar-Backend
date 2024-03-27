@@ -42,11 +42,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: project/monitoramentoar:1.0
+    image: joaopalazzolli/monitoramento-ar:1.0
     container_name: api-monitoramento
     restart: always
-    environment:
-      CLASSPATH: /usr/local/tomcat/webapps/api
     profiles: [ "dev" ]
     ports:
       - "8080:8080"
