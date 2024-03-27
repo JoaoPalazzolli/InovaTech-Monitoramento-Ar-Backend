@@ -11,6 +11,10 @@ LABEL maintainer="tomcat"
 
 COPY --from=build /home/monitoramento-ar/target/monitoramento-ar-1.0-SNAPSHOT.war /usr/local/tomcat/webapps
 
+RUN rm /usr/local/tomcat/conf/server.xml
+
+COPY --from=build /home/monitoramento-ar/src/main/resources/META-INF/server.xml /usr/local/tomcat/conf/
+
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
