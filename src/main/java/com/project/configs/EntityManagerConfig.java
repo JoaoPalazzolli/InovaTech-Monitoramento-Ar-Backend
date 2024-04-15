@@ -6,7 +6,7 @@ import jakarta.persistence.Persistence;
 
 public class EntityManagerConfig {
 
-    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-hibernate-mysql");
+    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-hibernate-postgres");
 
     public static EntityManager getEntityManager(){
         return emf.createEntityManager();
