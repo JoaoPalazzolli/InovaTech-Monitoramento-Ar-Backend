@@ -1,35 +1,35 @@
 version: '3.8'
 
 services:
-  mysql:
+  postgres:
     healthcheck:
-      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      test: [ "CMD-SHELL", "sh -c 'pg_isready -U root -d monitoramento-ar'" ]
       timeout: 45s
       interval: 10s
       retries: 5
-    image: mysql:latest
-    container_name: mysql-monitoramento
+    image: postgres:latest
+    container_name: postgres-monitoramento-ar
     restart: always
     environment:
-      MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: monitoramentoar
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: root
+      POSTGRES_DB: monitoramento-ar
     ports:
-      - "3306:3306"
+      - "5432:5432"
     volumes:
-      - mysql-monitoramento:/var/lib/mysql
+      - data:/var/lib/postgresql/data
     networks:
       - network-monitoramento-ar
 
-  phpMyAdmin:
+  pgadmin:
     depends_on:
-      mysql:
+      postgres:
         condition: service_healthy
-    image: phpmyadmin:latest
-    container_name: myadmin-monitoramento
-    restart: always
+    image: dpage/pgadmin4
     environment:
-      PMA_HOST: mysql
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 80
     ports:
       - "80:80"
     networks:
@@ -37,7 +37,7 @@ services:
 
   api-monitoramento:
     depends_on:
-      mysql:
+      postgres:
         condition: service_healthy
     build:
       context: .
@@ -56,4 +56,4 @@ networks:
     driver: bridge
 
 volumes:
-  mysql-monitoramento:
+  data:
