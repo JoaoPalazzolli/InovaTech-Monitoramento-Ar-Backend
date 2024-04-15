@@ -23,9 +23,20 @@ public class MonitoramentoService {
         resp.setStatus(200);
         resp.setContentType("application/json");
 
-        var monitoramentos = Mapper.parseListObject(monitoramentoRepository.findAll(), MonitoramentoDTO.class);
+        var monitoramentosDTO = Mapper.parseListObject(monitoramentoRepository.findAll(), MonitoramentoDTO.class);
 
-        var toJson = gson.toJson(monitoramentos);
+        var toJson = gson.toJson(monitoramentosDTO);
+
+        resp.getWriter().append(toJson);
+    }
+
+    public void findLastMonitoramento(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setStatus(200);
+        resp.setContentType("application/json");
+
+        var monitoramentoDTO = Mapper.parseObject(monitoramentoRepository.findLastMonitoramento().orElseThrow(), MonitoramentoDTO.class);
+
+        var toJson = gson.toJson(monitoramentoDTO);
 
         resp.getWriter().append(toJson);
     }
@@ -35,6 +46,9 @@ public class MonitoramentoService {
 
         monitoramentoRepository.save(monitoramento);
 
+        var toJson = gson.toJson(Mapper.parseObject(monitoramento, MonitoramentoDTO.class));
+
+        resp.getWriter().append(toJson);
         resp.setStatus(201);
         resp.setContentType("application/json");
     }
