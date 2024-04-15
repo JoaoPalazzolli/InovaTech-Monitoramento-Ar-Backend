@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,5 +26,11 @@ public class Monitoramento implements Serializable {
     private Long id;
     
     @Column(nullable = false)
-    private String nome;
+    private String temperatura;
+    @Column(nullable = false)
+    private String umidade;
+    @Column(nullable = false)
+    private boolean fumaca;
+    @Column(name = "data_monitoramento")
+    @Builder.Default private final Date dataMonitoramento = new Date();
 }

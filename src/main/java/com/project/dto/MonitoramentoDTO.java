@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,5 +19,8 @@ public class MonitoramentoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
-    private String nome;
+    private String temperatura;
+    private String umidade;
+    private boolean fumaca;
+    private Date dataMonitoramento;
 }
