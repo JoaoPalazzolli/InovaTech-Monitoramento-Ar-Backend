@@ -83,4 +83,17 @@ public class MonitoramentoRepository implements JpaRepository<Monitoramento, Lon
             logger.info(e.getMessage());
         }
     }
+
+    public Optional<Monitoramento> findLastMonitoramento(){
+        try {
+            var object = em.createNativeQuery("SELECT * FROM monitoramento" +
+                    "ORDER BY data_monitoramento DESC" +
+                    "LIMIT 1", Monitoramento.class).getSingleResult();
+
+            return Optional.of((Monitoramento) object);
+        } catch (Exception e){
+            logger.info(e.getMessage());
+        }
+        return Optional.empty();
+    }
 }
