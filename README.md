@@ -16,16 +16,17 @@ Este é um projeto WebService criado para armazenar, visualizar, deletar e atual
 ### Classe Monitoramento:
 #### Metodos: 
 - FindAll -> Busca por todos os monitoramentos registrados no banco.
-- FindById -> Busca um monitoramento pelo seu ID que está registrado.
+- FindLast -> Busca o ultimo monitoramento registrado no banco.
+- FindCurrentDay -> Busca todos os monitoramentos registrados na data atual.
 - Create -> Salva um monitoramento no banco de dados.
-- Update -> Atualiza um monitoramento no banco de dados.
-- Delete -> Deleta um monitoramento no banco de dados.
 
 ## Implantações: (Aplicadas dentro da atividade)
 Implantações do Projeto.
 
 ## Versionamento:
 v1.0.0
+v1.0.1
+v1.0.2
 
 ## Autor(es):
 212193 - João Pedro Palzzolli - joaopedropalazzolli@gmail.com <br>
