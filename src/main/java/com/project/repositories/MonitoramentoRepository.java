@@ -98,7 +98,7 @@ public class MonitoramentoRepository implements JpaRepository<Monitoramento, Lon
         return Optional.empty();
     }
 
-    public List<Monitoramento> findMonitoramentoDay(){
+    public List<Monitoramento> findMonitoramentoCurrentDay(){
         try {
             return em.createNativeQuery("""
                     select * from monitoramento as mo

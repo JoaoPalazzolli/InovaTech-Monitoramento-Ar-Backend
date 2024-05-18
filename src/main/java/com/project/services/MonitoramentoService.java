@@ -30,6 +30,17 @@ public class MonitoramentoService {
         resp.getWriter().append(toJson);
     }
 
+    public void findMonitoramentoCurrentDay(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setStatus(200);
+        resp.setContentType("application/json");
+
+        var monitoramentosDTO = Mapper.parseListObject(monitoramentoRepository.findMonitoramentoCurrentDay(), MonitoramentoDTO.class);
+
+        var toJson = gson.toJson(monitoramentosDTO);
+
+        resp.getWriter().append(toJson);
+    }
+
     public void findLastMonitoramento(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setStatus(200);
         resp.setContentType("application/json");

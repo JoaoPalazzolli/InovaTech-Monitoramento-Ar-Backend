@@ -19,7 +19,7 @@ public class MonitoramentoController extends HttpServlet {
         if(req.getRequestURI().contains("last")){
             monitoramentoService.findLastMonitoramento(req, resp);
         } else if (req.getRequestURI().contains("currentday")) {
-            monitoramentoService.findMonitoramentoDay(req, resp);
+            monitoramentoService.findMonitoramentoCurrentDay(req, resp);
         } else {
             monitoramentoService.findAll(req, resp);
         }
