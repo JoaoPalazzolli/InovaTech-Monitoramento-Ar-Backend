@@ -97,4 +97,16 @@ public class MonitoramentoRepository implements JpaRepository<Monitoramento, Lon
         }
         return Optional.empty();
     }
+
+    public List<Monitoramento> findMonitoramentoDay(){
+        try {
+            return em.createNativeQuery("""
+                    select * from monitoramento as mo
+                    where DATE(mo.data_monitoramento) = CURRENT_DATE;
+                    """, Monitoramento.class).getResultList();
+        } catch (Exception e){
+            logger.info(e.getMessage());
+        }
+        return null;
+    }
 }
