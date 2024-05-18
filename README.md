@@ -24,8 +24,8 @@ Este é um projeto WebService criado para armazenar, visualizar, deletar e atual
 Implantações do Projeto.
 
 ## Versionamento:
-v1.0.0
-v1.0.1
+v1.0.0 <br>
+v1.0.1 <br>
 v1.0.2
 
 ## Autor(es):
