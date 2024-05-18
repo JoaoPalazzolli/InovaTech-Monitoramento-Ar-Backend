@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "monitoramento", value = {"/monitoramento", "/monitoramento/last"})
+@WebServlet(name = "monitoramento", value = {"/monitoramento", "/monitoramento/last", "/monitoramento/currentday"})
 public class MonitoramentoController extends HttpServlet {
 
     private final MonitoramentoService monitoramentoService = new MonitoramentoService();
@@ -18,6 +18,8 @@ public class MonitoramentoController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getRequestURI().contains("last")){
             monitoramentoService.findLastMonitoramento(req, resp);
+        } else if (req.getRequestURI().contains("currentday")) {
+            monitoramentoService.findMonitoramentoDay(req, resp);
         } else {
             monitoramentoService.findAll(req, resp);
         }
