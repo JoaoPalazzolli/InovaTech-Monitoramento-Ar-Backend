@@ -20,8 +20,11 @@ Este é um projeto WebService criado para armazenar, visualizar, deletar e atual
 - FindCurrentDay -> Busca todos os monitoramentos registrados na data atual.
 - Create -> Salva um monitoramento no banco de dados.
 
-## Implantações: (Aplicadas dentro da atividade)
-Implantações do Projeto.
+## Implantações: 
+- Busca de todos os dados de monitoramento.
+- Busca de todos os dados de monitoramento registrado no dia atual.
+- Busca pelo ultimo dado de monitoramento.
+- Salvamento dos dados de monitoramento.
 
 ## Versionamento:
 v1.0.0 <br>
