@@ -7,9 +7,9 @@
     <persistence-unit name="jpa-hibernate-postgres">
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
-            <property name="jakarta.persistence.jdbc.url"    value="jdbc:postgresql://dpg-cp7lmpud3nmc73bu691g-a:5432/monitoramentar_tm5e" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:postgresql://dpg-cp7tuh4f7o1s73el6i00-a:5432/monitoramentoardatabase" />
             <property name="jakarta.persistence.jdbc.user"   value="root" />
-            <property name="jakarta.persistence.jdbc.password" value="FIifFqRta5x9lNb55TVxaJWHfzvJT8xz" />
+            <property name="jakarta.persistence.jdbc.password" value="xoiVYedv2nJaFU8teGYJJ44xBLZRXU2W" />
             <property name="jakarta.persistence.schema-generation.database.action" value="update" />
             <property name="hibernate.dialect"    value="org.hibernate.dialect.PostgreSQLDialect" />
             <property name="hibernate.show_sql"   value="true" />
