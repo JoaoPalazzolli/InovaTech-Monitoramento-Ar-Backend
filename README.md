@@ -2,7 +2,7 @@
 InovaTech-Monitoramento-Ar-Backend
 
 ## Descrição: 
-Este é um projeto WebService criado para armazenar, visualizar, deletar e atualizar os dados de monitoramento de ar em um banco de dados, podendo assim receber pedidos e enviar respostas a um cliente.
+Este projeto consiste no desenvolvimento de uma API para armazenar e fornecer dados de monitoramento da qualidade do ar, capturados por sensores conectados a um Raspberry Pi.
 
 ## Pré-requisitos: 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
